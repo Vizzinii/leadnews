@@ -16,7 +16,7 @@ public class ExceptionCatch {
      * @param e
      * @return
      */
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler(Exception.class) //这个注解表示当前类是处理异常的类。且限定了当前类处理的异常类型
     @ResponseBody
     public ResponseResult exception(Exception e){
         e.printStackTrace();
@@ -26,7 +26,7 @@ public class ExceptionCatch {
     }
 
     /**
-     * 处理可控异常  自定义异常
+     * 处理自定义异常
      * @param e
      * @return
      */
